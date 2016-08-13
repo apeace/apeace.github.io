@@ -28,10 +28,33 @@ header h1 {
 	margin: 0;
 }
 
-main {
+main, nav {
 	margin: 0 auto;
 	max-width: 50em;
+}
 
+nav {
+	padding: 2em 1em 1em 1em;
+}
+
+nav a {
+	background: #634E3E;
+	color: #ffffff;
+	padding: 1em;
+	border: 1px solid #432f22;
+	border-radius: 3px;
+}
+
+nav a:hover, nav a.selected:hover {
+	background: #432f22;
+}
+
+nav a.selected {
+	background: #7A6E6A;
+}
+
+nav a:visited {
+	color: #ffffff;
 }
 
 a {
@@ -44,7 +67,23 @@ a:visited {
 }
 
 main > section > h2 {
-	background: #e3f1ff;
+	background: #e3f1f7;
 	border-left: 4px solid #747F91;
 	padding-left: 0.5em;
+}
+
+.highlight-bold {
+	font-weight: bold;
+}
+
+pre.code {
+	font-family: Courier;
+	font-size: 0.9em;
+	background: #eeeeee;
+	padding-left: 1em;
+	padding-top: 1em;
+}
+
+.hidden {
+	display: none;
 }
