@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+	<title>Andrew Peace (apeace)</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header id="header">
+	<h1>Andrew Peace</h1>
+	<p>Software Engineer</p>
+</header>
+
+<main>
+
+	<section id="opensource">
+		<h2>Open-source</h2>
+
+		<p>At Ride.com, I open-sourced by Device Farm CLI: <a href="https://github.com/ride/devicefarm">devicefarm</a></p>
+
+		<p>As a fun experiment to play with TypeScript, I wrote a tic-tac-toe solver: <a href="https://github.com/apeace/tictac.ts">tictac.ts</a></p>
+
+		<p>I'm proud to be proactive about finding, fixing, and pull-requesting bugs or
+			missing features in open-source libraries I use. Thus I have contributed several
+			small fixes to the open-source community:
+		</p>
+
+		<ul>
+			<li><a href="https://github.com/socketio/engine.io/pull/336">Engine.io PR #336</a> -
+				Fixes a Socket.io resource leak that can be catastrophic when connections frequently open and close
+			</li>
+			<li><a href="https://github.com/request/request/pull/146">request PR #146</a> -
+				Fixes mishandling of content-type setting for multipart POST requests
+			</li>
+			<li><a href="https://github.com/jfhbrook/node-sendgrid-web/pull/4">node-sendgrid-web PR #4</a> -
+				Fixes a socket hangup when sending a long email to Sendgrid
+			</li>
+			<li><a href="https://github.com/flatiron/director/pull/65">director PR #65</a> -
+				Fixes a minor documentation bug
+			</li>
+		</ul>
+	</section> <!-- end #opensource -->
+
+  	<section id="experience">
+		<h2>Professional Experience</h2>
+
+		<h3>Director of Engineering Operations - <a href="https://ride.com">Ride.com</a></h3>
+		<p>March 2016 - present</p>
+		<ul>
+			<li>Wrote a <a href="https://github.com/ride/devicefarm">DeviceFarm CLI</a> in Go, for
+				automating AWS Device Farm tests and device groups.
+			</li>
+			<li>Wrote a visualizer for Finite State Machines used on our backend (JS).</li>
+			<li>Wrote an integration test suite for testing chat interactions with our Bot (JS/Node).</li>
+			<li>Wrote a script for automatically setting up /etc/hosts with docker-machine (Ruby).</li>
+			<li>Managed migration of 20+ apps from a regular Heroku account to a Heroku Enterprise account.</li>
+			<li>Leader on devops for several engineering teams.</li>
+		</ul>
+
+		<h3>Freelance Software Engineer - <a href="https://managedbyq.com">Managed By Q</a></h3>
+		<p>January 2016 - February 2016</p>
+		<ul>
+			<li>Migrated from manually-managed EC2 instances to a containerized infrastructure, using
+				<a href="https://github.com/convox/rack">Convox</a>. From zero to production in four weeks.
+			</li>
+			<li>Setup automated deploy pipeline using CircleCi and Jenkins, from local to staging to prod.
+				Included Slack messages with clickable links to deploy.
+			</li>
+		</ul>
+
+		<h3>VP Engineering - <a href="https://managedbyq.com">Managed By Q</a></h3>
+		<p>July 2014 - September 2015</p>
+		<ul>
+			<li>Built a flexible calendar/scheduling system from scratch (Python, Django, MySQL)
+				to replace a manual-entry Google Calendar-based system
+			</li>
+			<li>Built a scalable infrastructure for real-time monitoring/communication for company
+				iPads in the field (Node.js, Redis, Redshift, Socket.io)
+			</li>
+			<li>Pioneered automated test coverage reports for all repos, including backend (Python/Node.js) and frontend (JS)</li>
+			<li>Oversaw development of all major features and new systems, and frequently performed code reviews on all repos</li>
+			<li>Migrated from a manually-managed MySQL instance to an RDS-managed instance</li>
+			<li>Participated in full-stack automation of our provisioning and deployment, including frontend build processes,
+				and Jenkins build/test/deploy scripts
+			</li>
+			<li>Performed vital ops kung-fu in several instances, including getting our services running within 30 minutes
+				of the CloudFront major outage on Thanksgiving 2014
+			</li>
+			<li>First developer hired in-house</li>
+			<li>Grew team from just myself, to over 10 engineers and designers; highly involved in interview/hiring process</li>
+			<li>Managed several remote freelancers</li>
+			<li>Gave several tech talks as part of our weekly Engineering and Beering event</li>
+		</ul>
+
+		<h3>Freelance Software Engineer - <a href="http://www.ghgroup.com/">Grey Healthcare Group</a></h3>
+		<p>April 2014 - June 2014</p>
+		<ul>
+			<li>Developed an HTML/JS iPad app with Excel-like spreadsheet capabilities, packaged for iOS with Cordova</li>
+			<li>Developed first-ever Javascript and PHP unit-testing practices used at GHG, and presented to the engineering
+				department on testing and other programming best-practices</li>
+			<li>Lead developer of
+				<a href="http://www.forbes.com/sites/aliciaadamczyk/2014/07/30/the-timeline-project-makes-planning-future-easy-for-millennial-women/">
+					The Timeline Project
+				</a> (has since been defunct), including developing a custom text-wrapping library for images built using
+				the <a href="https://secure.php.net/manual/en/book.image.php">GD PHP library</a> with different/variable-width fonts
+			</li>
+		</ul>
+
+		<h3>Senior Software Engineer - <a href="http://onswipe.com">Onswipe</a></h3>
+		<p>November 2011 - March 2014 <em>(Onswipe was acquired by Beanstock Media in August 2014)</em></p>
+		<ul>
+			<li>Inherited a legacy in-house RSS aggregator, which checked 2,000 feeds every 10 minutes</li>
+			<li>Re-architected and re-wrote RSS aggregator to eventually check 25,000 feeds every 60 seconds (Node.js, Redis, MySQL, MongoDB)</li>
+			<li>Implemented large-scale, customizable/programmable web crawler and scraper (Scala, DynamoDB)</li>
+			<li>Implemented "server-side rendering" engine using a headless Chrome browser on the server (Node.js)</li>
+			<li>Sole or lead maintainer on over 10 repos, including data abstractions and util libraries used company-wide (Node.js)</li>
+			<li>Fixed several hard-to-find bugs in our vanilla JS frontend</li>
+			<li>Implemented an experimental MRAID wrapper for HTML5/Javascript ads</li>
+			<li>Reported directly to CTO, and frequently worked directly with internal business users/stakeholders to develop new features and fix bugs</li>
+		</ul>
+
+		<h3>Computer Science Student - Northeastern University</h3>
+		<p>September 2008 - September 2010, left before completing degree to pursue a career in startups</p>
+	</section> <!-- end #experience -->
+
+	<section id="skills">
+		<h2>Skills</h2>
+
+		<section id="languages">
+			<h3>Programming Languages</h3>
+			<ul>
+				<li>Experienced with: Node.js, client-side Javascript, Python, Typescript, Bash, PHP, HTML, CSS</li>
+				<li>Some experience with: Go, Java, Scala, LISP/Scheme</li>
+			</ul>
+		</section>
+
+		<section id="databases">
+			<h3>Databases</h3>
+			<ul>
+				<li>Experienced with: MySQL, PostgreSQL, Redis, MongoDB, DynamoDB</li>
+				<li>Some experience with: Redshift, Riak, ElasticSearch</li>
+			</ul>
+		</section>
+
+		<section id="infrastrucure">
+			<h3>Infrastructure</h3>
+			<ul>
+				<li>Experienced with AWS tools: EC2, S3, Cloudfront, ELB, Route53, RDS, ElastiCache, DynamoDB, SES, SQS</li>
+				<li>Experienced with: Nginx, Convox, Docker, Heroku</li>
+				<li>Some experience working with a variety of provisioning strategies: Puppet, Salt, Elastic Beanstalk, and vanilla Bash scripts</li>
+			</ul>
+		</section>
+
+		<section id="libs">
+			<h3>Libraries, Frameworks, and Tools</h3>
+			<ul>
+				<li>Experienced with (frameworks): Express.js, Django</li>
+				<li>Some experience with (frameworks): Flask, Backbone.js, Bootstrap</li>
+				<li>Experienced with (libraries): jQuery, React, Socket.io, Underscore/LoDash, TastyPie</li>
+				<li>Some experience with (libraries): Too many to count!
+				<li>Experienced with (tools): Git, Gulp, Browserify, NPM, pip</li>
+				<li>Some experience with (tools): Make, Maven, Subversion</li>
+			</ul>
+		</section>
+
+	</section> <!-- end #skills -->
+
+  </main>
+
+</body>
+</html>
