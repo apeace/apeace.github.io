@@ -1,0 +1,74 @@
+/*
+Colors:
+	#634E3E - dark brown
+	#7A6E6A - light brown
+	#344949 - dark green
+	#747F91 - dark gray/blue
+	#ADBBC9 - light gray/blue
+*/
+
+body {
+	line-height: 1.5;
+	font-family: 'Roboto Slab', serif;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #634E3E;
+	font-weight: bold;
+}
+
+a:visited {
+	color: #7A6E6A;
+}
+
+pre.code {
+	font-family: Courier;
+	font-size: 0.9em;
+	background: #eeeeee;
+	padding-left: 1em;
+	padding-top: 1em;
+}
+
+.hidden {
+	display: none;
+}
+
+article header {
+	text-align: center;
+	padding: 25px 0;
+}
+
+article header *:first-child {
+	margin-top: 0;
+}
+
+article header *:last-child {
+	margin-bottom: 0;
+}
+
+article header h1 {
+	margin-bottom: 0;
+}
+
+article header h1+p {
+	margin-top: 0;
+}
+
+article header time {
+	font-style: italic;
+}
+
+article header+* {
+	margin-top: 0;
+}
+
+article {
+	margin: 0 auto;
+	max-width: 50em;
+}
+
+article footer {
+	margin-top: 25px;
+}
